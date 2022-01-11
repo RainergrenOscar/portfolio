@@ -1,0 +1,123 @@
+@import "../../styles/variables.scss";
+
+.header {
+  background: #20202357;
+  width: 100%;
+  height: $headerHeight;
+  padding: 0 1.5rem;
+  position: fixed;
+  top: 0;
+
+  @include breakpoint(md) {
+    padding: 0 3rem;
+  }
+  transition: 0.3s ease all;
+
+  &__content {
+    overflow: hidden;
+    color: $font-color;
+    margin: 0 auto;
+    max-width: 860px; //Might change hehe
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 100%;
+    position: relative;
+
+    &__logo {
+      font-size: $nav-brand-size;
+      font-weight: 600;
+      font-family: $logo;
+      letter-spacing: -1px;
+      text-decoration: none;
+      color: $font-color;
+    }
+
+    &__wiggle {
+      transition: transform 0.7s ease-in-out;
+      color: $yellow;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+
+    &__nav {
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: blur(2px);
+      transform: translate(0);
+      transition: 0.3s ease all;
+
+      @include breakpoint(md) {
+        transform: none;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        height: 100%;
+        position: static;
+      }
+      ul {
+        font-weight: 400;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-lg;
+        @include breakpoint(md) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: calc(0.5rem + #{$spacing-md});
+        }
+        li {
+          &:not(:last-child) {
+            margin-bottom: $spacing-lg;
+            @include breakpoint(md) {
+              margin-bottom: 0;
+              margin-right: $spacing-md;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
+            padding: 0.75rem 1.25rem;
+            transition: 0.3s ease all;
+
+            &:hover {
+              text-decoration: underline;
+              text-underline-position: under;
+            }
+          }
+        }
+      }
+      &.isMenu {
+        transform: translate(100%);
+      }
+    }
+    &__toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      transition: 0.3s ease all;
+      position: relative;
+
+      &:hover {
+        color: $light-grey;
+      }
+
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+$logo: "Work Sans", sans-serif;
+$text: "Source Sans 3", sans-serif;
+
+//colors
+$bg-color: #202023;
+$font-color: #eeeeee;
+$yellow: #fed393;
+$button-color: #70e6d9;
+$light-grey: #525252;
+$dark-grey: #313134;
+$red: #ff6767;
+
+//size
+$nav-brand-size: 1.25rem;
+$nav-item-size: 1rem;
+$main-size: 1.25rem;
+$name-size: 3.375rem;
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 60px;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
