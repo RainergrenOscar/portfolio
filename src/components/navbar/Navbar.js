@@ -8,7 +8,7 @@ import classes from "./Navbar.module.scss"
 import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(true) //setting state to change navbar on smaller screen
+    const [menuOpen, setMenuOpen] = useState(false) //setting state to change navbar on smaller screen
     const [size, setSize] = useState({
         width: undefined,
         height: undefined
@@ -21,7 +21,8 @@ const Navbar = () => {
                 height: window.innerHeight
             })
         }
-        return () => window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
     },[])
 
     useEffect(() => {
@@ -43,14 +44,14 @@ const Navbar = () => {
             <nav className={`${classes.header__content__nav} ${menuOpen && size.width < 768 ? classes.isMenu : ""}`}>
                 <ul>
                     <li>
-                        <NavLink to="/test-1" onClick={menuToggleHandler} >Home</NavLink>
+                        <NavLink to="/about" onClick={menuToggleHandler}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/" onClick={menuToggleHandler}>About</NavLink>
+                        <NavLink to="/projects" onClick={menuToggleHandler}>Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/" onClick={menuToggleHandler}>Resume</NavLink>
-                    </li>
+                        <NavLink to="/resume" onClick={menuToggleHandler}>Resume</NavLink>
+                        </li>  
                 </ul>
             </nav>
             <div className={classes.header__content__toggle}>

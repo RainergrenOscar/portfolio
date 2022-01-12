@@ -73,6 +73,7 @@
         flex-direction: column;
         margin-bottom: $spacing-lg;
         @include breakpoint(md) {
+          font-weight: 400;
           flex-direction: row;
           align-items: center;
           margin-bottom: 0;
@@ -95,6 +96,11 @@
             &:hover {
               text-decoration: underline;
               text-underline-position: under;
+              color: rgba($font-color, 0.6);
+            }
+            &:active {
+              border-radius: calc(#{$borderRadius} + 6px);
+              background: (rgba($font-color, 0.1), rgba($font-color, 0.2));
             }
           }
         }
@@ -112,7 +118,7 @@
       position: relative;
 
       &:hover {
-        color: $light-grey;
+        color: $yellow;
       }
 
       @include breakpoint(md) {
