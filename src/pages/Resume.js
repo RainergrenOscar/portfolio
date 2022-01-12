@@ -1,10 +1,12 @@
 import React from 'react'
+import classes from "./Resume.module.scss"
+import ResumeImage from "../img/Desktop.png"
 
 const Resume = () => {
     return (
-        <>
-            <h1>Resume</h1>
-        </>
+        <div className={classes.container}>
+            <img src={ResumeImage} className={classes.image_logo} alt="" />
+        </div>
     )
 }
 

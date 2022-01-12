@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .header {
-  background: #20202357;
+  background: #202023ce;
   width: 100%;
   height: $headerHeight;
   padding: 0 1.5rem;
@@ -10,6 +10,7 @@
 
   @include breakpoint(md) {
     padding: 0 3rem;
+    backdrop-filter: blur(4px);
   }
   transition: 0.3s ease all;
 
@@ -17,7 +18,8 @@
     overflow: hidden;
     color: $font-color;
     margin: 0 auto;
-    max-width: 860px; //Might change hehe
+
+    max-width: 768px; //Might change hehe
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +44,31 @@
       }
     }
 
+    &__darkmode {
+      font-size: $nav-brand-size;
+      cursor: pointer;
+    }
+
+    &__sun {
+      position: relative;
+      top: 3px;
+      color: $yellow;
+
+      &:hover {
+        filter: brightness(130%);
+      }
+    }
+
+    &__moon {
+      position: relative;
+      top: 3px;
+      color: rgb(65, 0, 170);
+
+      &:hover {
+        filter: brightness(130%);
+      }
+    }
+
     &__nav {
       top: 0;
       right: 100%;
@@ -54,17 +81,17 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      backdrop-filter: blur(2px);
+      backdrop-filter: blur(4px);
       transform: translate(0);
       transition: 0.3s ease all;
 
       @include breakpoint(md) {
         transform: none;
         flex-direction: row;
-        background-color: transparent;
         width: auto;
         height: 100%;
         position: static;
+        backdrop-filter: blur(0px);
       }
       ul {
         font-weight: 400;

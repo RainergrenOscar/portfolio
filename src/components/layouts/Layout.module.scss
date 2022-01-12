@@ -3,6 +3,10 @@
 .container {
   height: 100vh;
   padding-top: 60px;
-  width: 100%;
-  background: §bg-color;
+  display: flex;
+  justify-content: center;
+  &__content {
+    background: §bg-color;
+    width: 678px;
+  }
 }
