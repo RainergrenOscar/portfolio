@@ -18,7 +18,6 @@
     overflow: hidden;
     color: $font-color;
     margin: 0 auto;
-
     max-width: 768px; //Might change hehe
     display: flex;
     justify-content: space-between;
@@ -34,6 +33,7 @@
       letter-spacing: -1px;
       text-decoration: none;
       color: $font-color;
+      list-style: none;
     }
 
     &__wiggle {

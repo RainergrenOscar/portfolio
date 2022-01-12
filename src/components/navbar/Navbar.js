@@ -49,7 +49,7 @@ const Navbar = () => {
         <header className={classes.header}>
             <div className={classes.header__content}>
                 <NavLink to="/"className={classes.header__content__logo}>
-                    <h2 className={classes.header__content__logo}></h2><MdLightbulb className={classes.header__content__wiggle} />Oscar Rainergren</h2>
+                    <h2 className={classes.header__content__logo}><MdLightbulb className={classes.header__content__wiggle} />Oscar Rainergren</h2>
                 </NavLink>
             <nav className={`${classes.header__content__nav} ${menuOpen && size.width < 768 ? classes.isMenu : ""}`}>
                 <ul>
