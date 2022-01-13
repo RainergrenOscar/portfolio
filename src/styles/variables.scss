@@ -19,7 +19,7 @@ $nav-brand-size: 1.25rem;
 $nav-item-size: 1rem;
 $heading-size: 1.5rem;
 $main-size: 1.25rem;
-$name-size: 3.375rem;
+$name-size: 2.8rem;
 
 // spacing
 $spacing-md: 16px;
@@ -30,6 +30,9 @@ $borderRadius: 12px;
 
 // header height
 $headerHeight: 60px;
+
+//section margins
+$section-margin: 3.2rem;
 
 @mixin breakpoint($point) {
   @if $point == md {

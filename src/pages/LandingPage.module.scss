@@ -4,27 +4,55 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
   &__container {
     &__item {
       vertical-align: top;
       display: block;
       text-align: center;
       width: 100%;
+      margin-bottom: $section-margin;
       &__img {
-        width: 25rem;
-        object-position: 0 -50px;
+        width: 18rem;
+        object-position: 0 -3px;
       }
       &__text {
         display: block;
         background: $dark-grey;
         border-radius: 15px;
-        padding: 15px 40px;
+        padding: 15px 35px;
         margin-top: -56px;
+      }
+    }
+    &__split {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      @media screen and (max-width: 550px) {
+        flex-direction: column;
+      }
+      &__name {
+        h1 {
+          font-size: $name-size;
+          font-family: $logo;
+          font-weight: 500;
+          letter-spacing: -3.2px;
+        }
+        @media screen and (max-width: 550px) {
+          text-align: center;
+        }
+      }
+      &__img {
+        margin-left: auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        @media screen and (max-width: 550px) {
+          margin: 15px auto;
+        }
       }
     }
   }
   @media screen and (max-width: 768px) {
-    padding: 0 20px;
+    padding: 0 1.5rem;
   }
 }
