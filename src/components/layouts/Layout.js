@@ -1,4 +1,5 @@
 import React from 'react'
+import LandingPage from '../../pages/LandingPage'
 
 import Navbar from "../navbar/Navbar"
 import classes from "./Layout.module.scss"
