@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background: blue; // change
+  width: 100%;
+  min-height: calc(100vh - 50rem);
+  padding: 0 0.5rem;
+  &__content {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
