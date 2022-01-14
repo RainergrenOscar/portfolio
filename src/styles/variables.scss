@@ -17,7 +17,7 @@ $red: #ff6767;
 //size
 $nav-brand-size: 1.25rem;
 $nav-item-size: 1rem;
-$heading-size: 1.5rem;
+$heading-size: 1.4rem;
 $main-size: 1.25rem;
 $name-size: 2.8rem;
 
@@ -33,6 +33,9 @@ $headerHeight: 60px;
 
 //section margins
 $section-margin: 3.2rem;
+
+//Life sections
+$section-info: 3.6rem;
 
 @mixin breakpoint($point) {
   @if $point == md {
