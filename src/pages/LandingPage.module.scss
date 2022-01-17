@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 10rem;
   &__container {
     max-width: 579px;
     &__item {
@@ -93,6 +94,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 5rem;
         button {
           width: 120px;
           height: 40px;

@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
     const darkTime = () => {
-        setDarkMode((e) => !e)
+        setDarkMode((e) => !e) // Under progress
     }
 
 

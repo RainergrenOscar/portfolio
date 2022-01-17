@@ -5,11 +5,14 @@ import ProfilePicture from "../img/Profile.png"
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { CgChevronRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import Cards from "../components/cards/Cards";
+
 
 
 
 const LandingPage = () => {
     return (
+        // Presentation section
         <section className={classes.section}>
             <div className={classes.section__container}>
                 <div className={classes.section__container__item}>
@@ -25,6 +28,7 @@ const LandingPage = () => {
                         <img src={ProfilePicture} className={classes.section__container__split__img}alt="Guy face profile picture" />
                     </div>
                 </div>
+                {/* Facts section */}
                 <div className={classes.section__container__info}>
                     <div className={classes.section__container__info__about}> 
                         <h2>About</h2>
@@ -52,10 +56,11 @@ const LandingPage = () => {
                     <div className={classes.section__container__info__button}> 
                         <Link to="/resume"><button>Resume<CgChevronRight className={classes.section__container__info__button__arrow}/></button></Link>
                     </div>
-                </div>
-
+                </div>         
             </div>
+            
         </section>
+        
     )
 }
 
