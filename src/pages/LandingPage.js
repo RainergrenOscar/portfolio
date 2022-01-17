@@ -5,7 +5,7 @@ import ProfilePicture from "../img/Profile.png"
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { CgChevronRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import HighlightCards from "../components/cards/HighlightCards";
+import { HighlightProjects } from "../components/cards/Data";
 
 
 
@@ -28,6 +28,7 @@ const LandingPage = () => {
                         <img src={ProfilePicture} className={classes.section__container__split__img}alt="Guy face profile picture" />
                     </div>
                 </div>
+
                 {/* Facts section */}
                 <div className={classes.section__container__info}>
                     <div className={classes.section__container__info__about}> 
@@ -38,6 +39,8 @@ const LandingPage = () => {
                         <h2>Interest</h2>
                         <p><span style={{color: "#ff6767"}}>Coding,</span>  Music,  Gaming,  Making pasta (particularly ravioli),  <span style={{color: "#fed393"}}>Eating my Pasta,</span>  Etcetra</p>
                     </div>
+
+                    {/* Social media section */}
                     <div className={classes.section__container__info__socials}>
                         <h2>Socials</h2>
                         <div className={classes.section__container__info__socials__items}>
@@ -56,13 +59,26 @@ const LandingPage = () => {
                     <div className={classes.section__container__info__button}> 
                         <Link to="/resume"><button>Resume<CgChevronRight className={classes.section__container__info__button__arrow}/></button></Link>
                     </div>
-                  
+
+                  {/* Latest card gets data from data.js file */}
                 <div className={classes.section__container__info__projects}>
-                    <h2>Latest projects</h2>
-                    
-                        <HighlightCards />
-                    </div>
+                        <h2>Latest projects</h2>    
+                        </div>
+                        <div className={classes.container}>
+                            {HighlightProjects.map((projects) => (
+                                <div className={classes.container__card} key={projects.id}>
+                                    <div className={classes.container__card__image}>
+                                        <img className={classes.container__card__image__item} src={projects.image} alt="" />
+                                    </div>
+                                    <div className={classes.container__card__text}>
+                                        <div><h1>{projects.title}</h1></div>
+                                        <div><p>{projects.description.substring(0, 100)}...</p></div>
+                                    </div>
+                                </div>
+                            ))}
+                    </div>  
                 </div> 
+
             </div>
         </section>
         

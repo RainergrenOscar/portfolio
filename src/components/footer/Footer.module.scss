@@ -1,13 +1,37 @@
 @import "../../styles/variables.scss";
 
 .footer {
-  background: blue; // change
-  width: 100%;
-  min-height: calc(100vh - 50rem);
-  padding: 0 0.5rem;
+  height: 200px;
+  display: flex;
+  justify-content: center;
   &__content {
     position: relative;
     left: 0;
     bottom: 0;
+    width: 832px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(184, 193, 199, 1);
+    padding: 0 2rem;
+    &__left {
+      span {
+        font-weight: 700;
+        color: $font-color;
+      }
+    }
+    &__right {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      &__link {
+        margin: 0 2rem;
+      }
+    }
+    @media screen and (max-width: $small-screen) {
+      flex-direction: column;
+      margin: 2rem;
+    }
   }
 }
