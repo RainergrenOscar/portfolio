@@ -15,14 +15,16 @@ const Navbar = () => {
         width: undefined,
         height: undefined
     })
-    
-    useEffect(() => {
-        const handleResize = () => {
+
+    const handleResize = () => {
             setSize({
                 width: window.innerWidth,
                 height: window.innerHeight
             })
-        }
+    }
+    
+    useEffect(() => {   
+        handleResize()
         window.addEventListener("resize", handleResize)
         return () => window.removeEventListener("resize", handleResize)
     },[])
@@ -35,6 +37,7 @@ const Navbar = () => {
 
     const menuToggleHandler = () => {
         setMenuOpen((p) => !p)
+        console.log(size.width)
     }
 
 

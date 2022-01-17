@@ -5,7 +5,7 @@ import ProfilePicture from "../img/Profile.png"
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 import { CgChevronRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import Cards from "../components/cards/Cards";
+import HighlightCards from "../components/cards/HighlightCards";
 
 
 
@@ -56,9 +56,14 @@ const LandingPage = () => {
                     <div className={classes.section__container__info__button}> 
                         <Link to="/resume"><button>Resume<CgChevronRight className={classes.section__container__info__button__arrow}/></button></Link>
                     </div>
-                </div>         
+                  
+                <div className={classes.section__container__info__projects}>
+                    <h2>Latest projects</h2>
+                    
+                        <HighlightCards />
+                    </div>
+                </div> 
             </div>
-            
         </section>
         
     )
