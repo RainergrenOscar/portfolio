@@ -14,8 +14,8 @@ const Cards = () => {
                         <img className={classes.container__card__image__item} src={projects.image} alt="" />
                     </div>
                     <div className={classes.container__card__text}>
-                        <h1>{projects.title}</h1>
-                        <p>{projects.description}</p>
+                        <div><h1>{projects.title}</h1></div>
+                          <div><p>{projects.description}</p></div>  
                     </div>
                     
                 </div>
