@@ -2,11 +2,10 @@ import React, {useState,useEffect} from 'react'
 import { BiMenuAltRight } from "react-icons/bi"
 import { AiOutlineClose } from "react-icons/ai"
 import { MdLightbulb } from "react-icons/md";
-import { FiSun,FiMoon } from "react-icons/fi";
-
-
 import classes from "./Navbar.module.scss"
 import { NavLink } from 'react-router-dom'
+import { BsGithub } from "react-icons/bs";
+
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false) //setting state to change navbar on smaller screen
@@ -41,9 +40,6 @@ const Navbar = () => {
     }
 
 
-    const darkTime = () => {
-        setDarkMode((e) => !e) // Under progress
-    }
 
 
 
@@ -67,8 +63,7 @@ const Navbar = () => {
                         </li>  
                     </ul>
                     <div className={classes.header__content__darkmode}>
-                        {!darkMode ? (<FiSun className={classes.header__content__sun} onClick={darkTime} />) :
-                            (<FiMoon className={classes.header__content__moon} onClick={darkTime} />)}
+                        <a href="https://github.com/RainergrenOscar"><BsGithub className={classes.header__content__sun}/></a>
                     </div>
             </nav>
             <div className={classes.header__content__toggle}>

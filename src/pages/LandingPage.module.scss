@@ -6,7 +6,8 @@
   justify-content: center;
   overflow: hidden;
   padding-bottom: 10rem;
-  height: 200rem;
+  height: 100rem;
+
   &__container {
     max-width: 579px;
     &__item {
@@ -30,7 +31,7 @@
       display: flex;
       flex-direction: row;
       width: 100%;
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: $small-screen) {
         flex-direction: column;
       }
       &__name {
@@ -41,7 +42,7 @@
           letter-spacing: -3.2px;
           color: $red;
         }
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: $small-screen) {
           text-align: center;
         }
       }
@@ -50,7 +51,7 @@
         width: 125px;
         height: 125px;
         border-radius: 50%;
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: $small-screen) {
           margin: 15px auto;
         }
       }
@@ -81,10 +82,12 @@
         &__items {
           display: flex;
           margin: 1rem 0;
+          &__symbol {
+            font-size: 21px;
+          }
           p {
             margin-left: 1rem;
-            position: relative;
-            top: -3.2px;
+            font-style: italic;
           }
         }
         h2 {
@@ -126,6 +129,7 @@
   }
   @media screen and (max-width: 768px) {
     padding: 0 1.5rem;
+    height: 160rem;
   }
 }
 
@@ -149,12 +153,11 @@
         border-radius: 10px;
         @media screen and (max-width: $small-screen) {
           width: 100%;
-          height: 350px;
+          height: 380px;
         }
       }
     }
     &__text {
-      width: 100%;
       text-align: center;
       h1 {
         padding: 10px 0;

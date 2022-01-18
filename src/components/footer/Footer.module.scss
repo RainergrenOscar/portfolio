@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   &__content {
-    position: relative;
     left: 0;
     bottom: 0;
     width: 832px;
@@ -32,6 +31,10 @@
     @media screen and (max-width: $small-screen) {
       flex-direction: column;
       margin: 2rem;
+      padding: 0;
     }
+  }
+  @media screen and (max-width: $small-screen) {
+    margin-bottom: 3rem;
   }
 }
