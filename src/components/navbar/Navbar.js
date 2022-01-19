@@ -36,12 +36,7 @@ const Navbar = () => {
 
     const menuToggleHandler = () => {
         setMenuOpen((p) => !p)
-        console.log(size.width)
     }
-
-
-
-
 
 
     return (

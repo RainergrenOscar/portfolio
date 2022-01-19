@@ -1,1 +1,58 @@
 @import ".././styles/variables.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 10rem;
+  color: $font-color-light;
+  &__card {
+    background: $light-beige-light;
+    margin-top: 10vh;
+    width: 90%;
+    border-radius: 15px;
+    form {
+      height: auto;
+      background: white;
+      margin: 2rem;
+      border-radius: 10px;
+      box-shadow: 1.5px 4px 10px rgba(87, 87, 87, 0.1);
+    }
+    &__header {
+      text-align: center;
+      padding-top: 1.5rem;
+      h1 {
+        padding-bottom: 0.3rem;
+        opacity: 95%;
+      }
+      p {
+        font-size: 1.1rem;
+        opacity: 70%;
+      }
+    }
+    &__socials {
+      display: flex;
+      flex-direction: grid;
+      justify-content: space-around;
+      padding: 2rem;
+      text-align: center;
+
+      &__item {
+        background: rgb(253, 253, 253);
+        padding: 1rem;
+        border-radius: 5px;
+        max-width: auto;
+        box-shadow: 1.5px 4px 8px rgba(87, 87, 87, 0.1);
+        color: $font-color-light;
+        width: 5rem;
+        height: auto;
+        &:hover {
+        }
+        &__img {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
