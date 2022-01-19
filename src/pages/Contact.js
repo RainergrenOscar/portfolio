@@ -14,7 +14,7 @@ const [email, setEmail] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('outlook', 'template_3ull0u2', e.target, 'user_MCREa0vhcI7v7wpZph9ij')
+    emailjs.sendForm('service_ygaubbh', 'template_3ull0u2', e.target, 'user_MCREa0vhcI7v7wpZph9ij')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -30,7 +30,7 @@ const [email, setEmail] = useState(false)
                 <h1>CONTACT</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
 
-                <form action="">
+                <form onSubmit={sendEmail}>
                     <div className={classes.container__form}>
                         <label htmlFor="user_name">Name</label>
                         <input type="text" name='user_name' placeholder='Name'className={classes.container__form__element} required />
@@ -44,15 +44,15 @@ const [email, setEmail] = useState(false)
                         <input type="text" name='user_mail' placeholder='Mail'className={classes.container__form__element}required />
                     </div>
                     <div className={classes.container__form}>
-                        <label htmlFor="user_name">Name</label>
-                        <input type="text" name='user_name' placeholder='Name'className={classes.container__form__element} required />
+                        <label htmlFor="user_telephone">Tel</label>
+                        <input type="text" name='user_telephone' placeholder='Phonenumber'className={classes.container__form__element} required />
                     </div>
                     <div className={classes.container__form__full}>
                         <label htmlFor="user_message">Message</label>
                         <textarea type="text-area" name='user_message' placeholder="Message"className={classes.container__form__full__textarea} required/>
                     </div>
                     <div className={classes.container__submit}>
-                        <input type="submit" />
+                        <button type='submit' value="Send">Send</button>
                     </div>
                 </form>
             </div>
