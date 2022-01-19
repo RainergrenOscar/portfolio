@@ -9,7 +9,6 @@ import { BsGithub } from "react-icons/bs";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false) //setting state to change navbar on smaller screen
-    const [darkMode, setDarkMode] = useState(false)
     const [size, setSize] = useState({
         width: undefined,
         height: undefined

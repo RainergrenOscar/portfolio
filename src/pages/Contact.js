@@ -3,6 +3,9 @@ import classes from "./Contact.module.scss"
 import emailjs from "emailjs-com"
 import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import { IoLocationSharp,IoMail } from "react-icons/io5"
+import { AiTwotonePhone } from 'react-icons/ai'
+
 
 
 
@@ -22,55 +25,38 @@ const [email, setEmail] = useState(false)
 
 
     return (
-        <div className={classes.container}>
-            <div className={classes.container__card}>
-                <div className={classes.container__card__header}>
-                    <h1>What are you working on?</h1>
-                    <p>Let's have a conversation</p>
-                </div>
-                <form action="">
-                    <div className={classes.container__card__split}>
-                        <div className={classes.container__card__split__left}>
-                            <div>
-                            <label htmlFor="user_name">Name</label>
-                            <input type="text" name="user_name" />
-                            </div>
-                            <div>
-                            <label htmlFor="user_name">Phone</label>
-                            <input type="text" name="user_name" />
-                            </div>
-                        </div>
-                        <div className={classes.container__card__split__right}>
+        <section className={classes.container}>
+            <div className={classes.container__title}>
+                <h1>CONTACT</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
 
-                        </div>
+                <form action="">
+                    <div className={classes.container__form}>
+                        <label htmlFor="user_name">Name</label>
+                        <input type="text" name='user_name' placeholder='Name'className={classes.container__form__element} required />
+                    </div>
+                    <div className={classes.container__form}>
+                        <label htmlFor="user_lastname">Lastname</label>
+                        <input type="text" name='user_lastname' placeholder='Lastname'className={classes.container__form__element} required/>
+                    </div>
+                    <div className={classes.container__form}>
+                        <label htmlFor="user_mail">Mail</label>
+                        <input type="text" name='user_mail' placeholder='Mail'className={classes.container__form__element}required />
+                    </div>
+                    <div className={classes.container__form}>
+                        <label htmlFor="user_name">Name</label>
+                        <input type="text" name='user_name' placeholder='Name'className={classes.container__form__element} required />
+                    </div>
+                    <div className={classes.container__form__full}>
+                        <label htmlFor="user_message">Message</label>
+                        <textarea type="text-area" name='user_message' placeholder="Message"className={classes.container__form__full__textarea} required/>
+                    </div>
+                    <div className={classes.container__submit}>
+                        <input type="submit" />
                     </div>
                 </form>
-                <div className={classes.container__card__socials}>
-                    <a href='/'>
-                        <div className={classes.container__card__socials__item}>
-                        <BsGithub  className={classes.container__card__socials__item__img}/>
-                        
-                        </div>
-                    </a>
-
-                    <a href="/">
-                    
-                    <div className={classes.container__card__socials__item}>
-                        <BsInstagram className={classes.container__card__socials__item__img}/>
-                        
-                        </div>
-                    </a>
-
-                    <a href="/">
-                    <div className={classes.container__card__socials__item}>
-                        <BsLinkedin className={classes.container__card__socials__item__img}/>
-                        
-                        </div>
-                    </a>
-                </div>
-                
             </div>
-        </div>
+        </section>
     )
 }
 
