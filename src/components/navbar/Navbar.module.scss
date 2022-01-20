@@ -84,6 +84,8 @@
       backdrop-filter: blur(4px);
       transform: translate(0);
       transition: 0.3s ease all;
+      background: $bg-color;
+      opacity: 90%;
 
       @include breakpoint(md) {
         transform: none;
@@ -92,6 +94,7 @@
         height: 100%;
         position: static;
         backdrop-filter: blur(0px);
+        background: none;
       }
       ul {
         font-weight: 400;
