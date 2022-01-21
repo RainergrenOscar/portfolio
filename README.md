@@ -1,7 +1,7 @@
 # Oscar Rainergren Portfolio
 This was my first solo project in React. The idea was to create a portfolio that looked clean and easy to use and go hand in hand with my resume.
 
-### Live
+### Live (portfolio)
 - Comming soon
 
 ### Design
