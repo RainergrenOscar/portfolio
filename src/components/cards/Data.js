@@ -25,7 +25,7 @@ export const ProjectsData = [
     {
         id: 3,
         image: "https://mobilanyheter.net/wp-content/uploads/2020/06/783px-Test-Logo.svg_-5.png",
-        title: "Lorem Ipsum",
+        title: "Watch & Co",
         description: "I look so dumb right noooooooow, u better hurry up",
         link: "https://github.com/RainergrenOscar/Watch-Co"
     }

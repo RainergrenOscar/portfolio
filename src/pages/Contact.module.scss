@@ -7,7 +7,7 @@ section {
   justify-content: center;
   overflow: hidden;
   padding-bottom: 10rem;
-  height: 100vh;
+  height: 80vh;
   .container__split {
     margin-top: 2rem;
     display: grid;
@@ -96,5 +96,8 @@ section {
         }
       }
     }
+  }
+  @media screen and (max-width: $small-screen) {
+    height: 100vh;
   }
 }

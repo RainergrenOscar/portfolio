@@ -1,6 +1,5 @@
 import React from 'react'
-import LandingPage from '../../pages/LandingPage'
-import Footer from '../footer/Footer'
+
 
 import Navbar from "../navbar/Navbar"
 import classes from "./Layout.module.scss"
