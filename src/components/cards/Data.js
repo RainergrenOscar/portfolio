@@ -10,21 +10,21 @@ export const ProjectsData = [
     },
     {
         id: 1,
-        image: "https://mobilanyheter.net/wp-content/uploads/2020/06/783px-Test-Logo.svg_-5.png",
+        image: "https://i.postimg.cc/nzS5zhYt/Ska-rmavbild-2022-01-21-kl-16-27-48.png",
         title: "Gifted. E-commerce",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus, adipisci distinctio doloremque aperiam omnis illo tenetur perferendis",  
         link: "https://github.com/RainergrenOscar/grupp4"
     },
     {
         id: 2,
-        image: "https://mobilanyheter.net/wp-content/uploads/2020/06/783px-Test-Logo.svg_-5.png",
+        image: "https://i.postimg.cc/5NL7c3GJ/Ska-rmavbild-2022-01-21-kl-16-21-39.png",
         title: "Planet F1",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus, adipisci distinctio doloremque aperiam omnis illo tenetur perferendis",
         link: "https://github.com/RainergrenOscar/Planet-F1"
     },
     {
         id: 3,
-        image: "https://mobilanyheter.net/wp-content/uploads/2020/06/783px-Test-Logo.svg_-5.png",
+        image: "https://i.postimg.cc/HxmW23fL/Ska-rmavbild-2022-01-21-kl-16-24-10.png",
         title: "Watch & Co",
         description: "I look so dumb right noooooooow, u better hurry up",
         link: "https://github.com/RainergrenOscar/Watch-Co"
@@ -41,7 +41,7 @@ export const HighlightProjects = [
     },
     {
         id: 1,
-        image: "https://mobilanyheter.net/wp-content/uploads/2020/06/783px-Test-Logo.svg_-5.png",
+        image: "https://i.postimg.cc/nzS5zhYt/Ska-rmavbild-2022-01-21-kl-16-27-48.png",
         title: "Gifted. E-commerce",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus, adipisci distinctio doloremque aperiam omnis illo tenetur perferendis",  
         link: "https://github.com/RainergrenOscar/grupp4"
