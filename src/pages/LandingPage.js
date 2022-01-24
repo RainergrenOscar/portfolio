@@ -8,6 +8,7 @@ import { HighlightProjects } from "../components/cards/Data";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 
 
@@ -27,7 +28,15 @@ const LandingPage = () => {
                 <div className={classes.section__container__split}>
                     <div className={classes.section__container__split__name} >
                         <h1>Oscar Rainergren</h1>
-                        <p>(Front-end Developer based in Stockholm)</p>
+                        <Typewriter
+                  words={["(Front-End Developer based in Stockholm)"]}
+                  loop={false}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={100}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
                     </div>
                     <div className={classes.section__container__split__img} >
                         <img src={ProfilePicture} className={classes.section__container__split__img}alt="Guy face profile picture" />
