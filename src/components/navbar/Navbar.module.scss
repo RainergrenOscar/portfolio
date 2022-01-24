@@ -85,7 +85,7 @@
       transform: translate(0);
       transition: 0.3s ease all;
       background: $bg-color;
-      opacity: 90%;
+      opacity: 85%;
 
       @include breakpoint(md) {
         transform: none;
