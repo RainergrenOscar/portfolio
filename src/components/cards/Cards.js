@@ -15,7 +15,7 @@ const Cards = () => {
             {ProjectsData.map((projects) => (
                 <div  className={classes.container__card} key={projects.id} data-aos="fade-up" >
                     <div  className={classes.container__card__image} data-aos="fade-up">
-                       <a href={projects.link}> <img className={classes.container__card__image__item} src={projects.image} alt=""  /></a>
+                       <a href={projects.link}> <img className={classes.container__card__image__item} src={projects.image} title="GO TO PROJECT"  /></a>
                     </div>
                     <div className={classes.container__card__text}data-aos="fade-up" >
                         <div><h1>{projects.title}</h1></div>
