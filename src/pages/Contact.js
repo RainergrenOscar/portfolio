@@ -31,13 +31,13 @@ const [email, setEmail] = useState(false)
                         <h1>Contact me.</h1>
                         <p>Let’s have a conversation! I’d love to hear about what you’re working on and find a way to work together.</p>
                         <div className={classes.container__split__icons}>
-                            <div >
+                            <div className={classes.container__split__icons__hover}>
                                <a href="https://www.facebook.com/oscar.rainergren/"><BsFacebook  /></a> 
                             </div>
-                            <div >
+                            <div className={classes.container__split__icons__hover}>
                                 <a href="https://www.linkedin.com/in/oscar-rainergren/"><BsLinkedin /></a>
                             </div>
-                            <div >
+                            <div className={classes.container__split__icons__hover}>
                                 <a href="https://www.instagram.com/oscarrainergren/"><BsGithub /></a>
                             </div>
                         </div>

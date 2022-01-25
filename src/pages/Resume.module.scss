@@ -4,8 +4,38 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  .image_logo {
+  flex-direction: column;
+  align-items: center;
+  &__download {
     margin-top: 8.6rem;
+    margin-bottom: 1rem;
+    a {
+      display: inline-block;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $red;
+      background: linear-gradient(
+        to right,
+        rgb(252, 57, 57),
+        rgb(252, 57, 57) 50%,
+        $red 50%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 0.4s ease;
+      transition: margin-left 0.3s ease;
+      text-decoration: none; // text decorations are clipped in WebKit browsers
+      &:hover {
+        background-position: 0 100%;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .image_logo {
     width: 90%;
     margin-bottom: 10vh;
     border: 20px solid $light-beige-light;

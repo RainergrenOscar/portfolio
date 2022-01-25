@@ -7,7 +7,7 @@ section {
   justify-content: center;
   overflow: hidden;
   padding-bottom: 10rem;
-  height: 80vh;
+  height: 100vh;
   .container__split {
     margin-top: 2rem;
     display: grid;
@@ -36,14 +36,19 @@ section {
       font-size: 30px;
       a {
         color: $font-color;
-        transition: 0.3s all ease;
+        transition: 0.3s color ease;
         &:hover {
           color: $red;
-          transition: 0.3s all ease;
         }
       }
       @media screen and (max-width: $small-screen) {
         justify-content: center;
+      }
+      &__hover {
+        transition: 0.3s margin-top ease;
+        &:hover {
+          margin-top: -0.5rem;
+        }
       }
     }
     form {
