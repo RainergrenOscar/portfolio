@@ -47,7 +47,7 @@ const LandingPage = () => {
                 <div className={classes.section__container__info} >
                     <div className={classes.section__container__info__about} data-aos="fade-up" > 
                         <h2>About</h2>
-                        <p>I am a future Front-End developer who is currently studying att KYH in Stockholm. Lorem ipsum I am a future Front-End developer who is currently studying att KYH in Stockholm. Lorem ipsum I am a future Front-End dolm.uture Front-End developer who is currently studying att KYH in Stockholm. Lorem ipsum I am a f</p>
+                        <p>Im a future Front-end Dev</p>
                     </div>
                     <div className={classes.section__container__info__interest} data-aos="fade-up" > 
                         <h2>Interest</h2>
