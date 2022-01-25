@@ -47,7 +47,7 @@ const LandingPage = () => {
                 <div className={classes.section__container__info} >
                     <div className={classes.section__container__info__about} data-aos="fade-up" > 
                         <h2>About</h2>
-                        <p>Im a future Front-end Dev</p>
+                        <p>Hi! Im Oscar Rainergren, a future Front-end Developer based in Stockholm, Sweden. Ive always been someone who has both a creative and logical side. When i discovered Front-end development back in 2020, I realized it would be the perfect match for me.<br/><br/>I primarily use React.js and Sass, but picking up a new framework or language is always fun to do 🤌 </p>
                     </div>
                     <div className={classes.section__container__info__interest} data-aos="fade-up" > 
                         <h2>Interest</h2>
