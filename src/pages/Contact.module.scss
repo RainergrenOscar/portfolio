@@ -88,14 +88,13 @@ section {
             border: none;
             border-radius: 20px;
             background: $red;
-            padding-left: 10px;
             font-family: $text;
             color: $font-color;
             transition: 0.3s all ease;
             cursor: pointer;
             &:hover {
               transition: 0.3s all ease;
-              background: #b34444;
+              background: #fa4646;
             }
           }
         }

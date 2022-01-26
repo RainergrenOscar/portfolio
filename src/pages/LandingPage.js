@@ -47,7 +47,7 @@ const LandingPage = () => {
                 <div className={classes.section__container__info} >
                     <div className={classes.section__container__info__about} data-aos="fade-up" > 
                         <h2>About</h2>
-                        <p>Since I was a kid I’ve always had an interest for producing electronic music, gaming, software and all kind of amazing tech. When I finished high school, i found out about front-end development and I realized it would be the perfect match. I could use my creative side to design and my logical side to code. <br/><br/>I primarily use React.js and Sass, but picking up a new framework or language is always fun 🤌 </p>
+                        <p>Hi! I'm Oscar Rainergren, a future Front-end Developer based in Stockholm, Sweden. Since I was a kid I've always had an interest for producing electronic music, gaming, software and all kind of amazing tech. When I finished high school, i found out about front-end development and realized that it would be the perfect match –  I could use my creative side to design and my logical side to code. <br /> <br />I primarily use React.js and Sass, but picking up a new framework or language is always fun. 🤌</p>
                     </div>
                     <div className={classes.section__container__info__interest} data-aos="fade-up" > 
                         <h2>Interest</h2>
