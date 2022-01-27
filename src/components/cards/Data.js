@@ -26,7 +26,7 @@ export const ProjectsData = [
         id: 3,
         image: "https://i.postimg.cc/HxmW23fL/Ska-rmavbild-2022-01-21-kl-16-24-10.png",
         title: "Watch & Co",
-        description: "Watch & Co is a fictional car business shop.",
+        description: "Watch & Co is a website where you review movies in small groups of friend, family, etcetra.",
         link: "https://github.com/RainergrenOscar/Watch-Co"
     }
 ]
