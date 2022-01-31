@@ -22,11 +22,11 @@ const LandingPage = () => {
         <section className={classes.section}>
             <div className={classes.section__container}>
                 <div className={classes.section__container__item}>
-                    <img src={GuyInChair} className={classes.section__container__item__img}  alt="Guy sitting at computer table" />
+                    <img src={GuyInChair} className={classes.section__container__item__img} data-aos="flip-left" alt="Guy sitting at computer table" />
                     <div className={classes.section__container__item__text}><p>Hi! I am a future Front-End Developer who is currently studying in Stockholm</p></div>
                 </div>
                 <div className={classes.section__container__split}>
-                    <div className={classes.section__container__split__name} >
+                    <div className={classes.section__container__split__name} data-aos="fade-left" >
                         <h1>Oscar Rainergren</h1>
                         <Typewriter
                   words={["(Front-End Developer based in Stockholm)"]}
@@ -39,7 +39,7 @@ const LandingPage = () => {
                 />
                     </div>
                     <div className={classes.section__container__split__img} >
-                        <img src={ProfilePicture} className={classes.section__container__split__img}alt="Guy face profile picture" />
+                        <img src={ProfilePicture} data-aos="fade-right" className={classes.section__container__split__img}alt="Guy face profile picture" />
                     </div>
                 </div>
 

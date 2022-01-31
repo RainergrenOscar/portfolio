@@ -9,7 +9,7 @@ const Projects = () => {
         <section className={classes.section}>
             <div className={classes.section__container}>
                 <div className={classes.section__container__item}>
-                    <img src={GuyInChair2} className={classes.section__container__item__img} alt="Guy sitting at computer table" />
+                    <img src={GuyInChair2} className={classes.section__container__item__img} data-aos="flip-left" alt="Guy sitting at computer table" />
                     <div className={classes.section__container__item__text}><p>Well hello there! Check out my recent works</p></div>
                 </div>
                 <Cards  />
