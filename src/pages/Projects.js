@@ -12,7 +12,8 @@ const Projects = () => {
                     <img src={GuyInChair2} className={classes.section__container__item__img} data-aos="flip-left" alt="Guy sitting at computer table" />
                     <div className={classes.section__container__item__text}><p>Well hello there! Check out my recent works</p></div>
                 </div>
-                <Cards  />
+                <Cards />
+
             </div>
         </section>
         
