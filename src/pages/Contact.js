@@ -6,15 +6,15 @@ import Aos from 'aos';
 
 
 
-
-
 const Contact = () => {
+    const [email, setEmail] = useState(false)
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768); //checks if window is under 768px
+
     useEffect(() => {
     Aos.init({duration: 1000 });
-     }, []);
-const [email, setEmail] = useState(false)
-
-  const sendEmail = (e) => {
+    }, []);
+    
+    const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_rzew9eh', 'template_3ull0u2', e.target, 'user_MCREa0vhcI7v7wpZph9ij')
       .then((result) => {
@@ -25,6 +25,16 @@ const [email, setEmail] = useState(false)
       e.target.reset();
       setEmail(true)
   };
+    
+
+    
+    useEffect(() => { // Removes Data aos if the screen width is less than 768 px for better phone view
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 768;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]); 
+    
 
 
     return (
@@ -50,15 +60,15 @@ const [email, setEmail] = useState(false)
                     <div>
                         <form onSubmit={sendEmail} >
                             <div className={classes.form__container}>
-                                <input type="text" placeholder='Name' name='name' required data-aos="fade-down"/>
+                                <input type="text" placeholder='Name' name='name' required data-aos={`${isMobile ? "" : "fade-down"}`}/>
                             </div>
                             <div className={classes.form__container}>
-                                <input type="text" placeholder='Email' name='email' data-aos="fade-left" required />
+                                <input type="text" placeholder='Email' name='email' data-aos={`${isMobile ? "" : "fade-left"}`} required />
                             </div>
                             <div className={classes.form__container}>
-                                <textarea placeholder='Message' name='message' data-aos="fade-right" required></textarea>
+                                <textarea placeholder='Message' name='message' data-aos={`${isMobile ? "" : "fade-right"}`} required></textarea>
                             </div>
-                            <div className={classes.form__container__button} data-aos="fade-up">
+                            <div className={classes.form__container__button} data-aos={`${isMobile ? "" : "fade-up"}`}>
                             <button type='submit' value="send" className={classes.form__container__button__center}>Send</button>
                             </div>
                         </form>
