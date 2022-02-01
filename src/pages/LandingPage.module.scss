@@ -6,7 +6,7 @@
   justify-content: center;
   overflow: hidden;
   padding-bottom: 10rem;
-  height: 110rem;
+  height: auto;
 
   &__container {
     max-width: 579px;
@@ -130,14 +130,13 @@
   }
   @media screen and (max-width: 768px) {
     padding: 0 1.5rem;
-    height: 160rem;
   }
 }
 
 // Design for the latest cards section
 .container {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;

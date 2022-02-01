@@ -13,11 +13,13 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    max-width: 678px;
     @media screen and (max-width: $small-screen) {
       grid-template-columns: 1fr;
       text-align: center;
       p {
         max-width: 290px;
+        margin: auto;
       }
     }
     h1 {
@@ -102,6 +104,7 @@ section {
     }
   }
   @media screen and (max-width: $small-screen) {
-    height: 140vh;
+    margin: auto;
+    height: auto;
   }
 }

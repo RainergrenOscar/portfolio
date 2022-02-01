@@ -7,12 +7,14 @@ import LandingPage from './pages/LandingPage';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import PageNotFound from './pages/PageNotFound';
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
   return (
     <>
-    <Layout>
+      <Navbar />
+
         <ScrollToTop />
       <Routes>
        <Route path="/" element={<LandingPage/>} />
@@ -20,8 +22,8 @@ function App() {
         <Route path="projects" element={<Projects/>} />
         <Route path="resume" element={<Resume />} />
         <Route path="*" element={<PageNotFound/>}/>
-      </Routes>
-      </Layout>
+        </Routes>
+
       <Footer/>
     </>
   );
