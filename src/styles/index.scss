@@ -15,3 +15,18 @@ body {
   color: $font-color;
   width: 100%;
 }
+* {
+  scrollbar-color: #2a2a2c;
+}
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $bg-color;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #35353a;
+  border-radius: 10px;
+}
