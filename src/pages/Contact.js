@@ -36,13 +36,13 @@ const [email, setEmail] = useState(false)
                         <p data-aos="fade-right" >Let’s have a conversation! I’d love to hear about what you’re working on and find a way to work together.</p>
                         <div className={classes.container__split__icons} data-aos="fade-up">
                             <div className={classes.container__split__icons__hover}>
-                               <a href="https://www.facebook.com/oscar.rainergren/"><BsFacebook  /></a> 
+                               <a href="https://www.facebook.com/oscar.rainergren/" target="_blank"><BsFacebook  /></a> 
                             </div>
                             <div className={classes.container__split__icons__hover}>
-                                <a href="https://www.linkedin.com/in/oscar-rainergren/"><BsLinkedin /></a>
+                                <a href="https://www.linkedin.com/in/oscar-rainergren/" target="_blank"><BsLinkedin /></a>
                             </div>
                             <div className={classes.container__split__icons__hover}>
-                                <a href="https://www.instagram.com/oscarrainergren/"><BsGithub /></a>
+                                <a href="https://www.instagram.com/oscarrainergren/" target="_blank"><BsGithub /></a>
                             </div>
                         </div>
                        

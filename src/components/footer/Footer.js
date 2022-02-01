@@ -11,9 +11,9 @@ const Footer = () => {
                     <p>Built with <span>React. </span>Styled with <span>SASS. </span> Created with <span>Love. </span></p>
                 </div>
                 <div className={classes.footer__content__right}>
-                    <a href="https://github.com/RainergrenOscar"><BsGithub /></a>
-                    <a href="https://www.instagram.com/oscarrainergren/"><BsInstagram className={classes.footer__content__right__link}/></a>
-                    <a href="https://www.linkedin.com/in/oscar-rainergren/"><BsLinkedin/></a>
+                    <a href="https://github.com/RainergrenOscar" target="_blank"><BsGithub /></a>
+                    <a href="https://www.instagram.com/oscarrainergren/" target="_blank"><BsInstagram className={classes.footer__content__right__link}/></a>
+                    <a href="https://www.linkedin.com/in/oscar-rainergren/" target="_blank"><BsLinkedin/></a>
                 </div>
             </div>
         </div>
