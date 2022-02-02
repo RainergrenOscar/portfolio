@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  color: $font-color;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  &__card {
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    height: 200px;
+    border-radius: 20px;
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        padding: 10px;
+        padding-bottom: 20px;
+      }
+
+      &__item {
+        width: 270px;
+        height: 180px;
+        border-radius: 10px;
+
+        @media screen and (max-width: $small-screen) {
+          width: 100%;
+          height: 300px;
+        }
+        @media screen and (max-width: 469px) {
+          width: 100%;
+          height: 235px;
+        }
+      }
+    }
+    &__text {
+      width: 100%;
+      text-align: center;
+      p {
+        margin: 0 1rem;
+      }
+    }
+  }
+  @media screen and (max-width: $small-screen) {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
