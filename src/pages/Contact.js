@@ -60,13 +60,32 @@ const Contact = () => {
                     <div>
                         <form onSubmit={sendEmail} >
                             <div className={classes.form__container}>
-                                <input type="text" placeholder='Name' name='name' required data-aos={`${isMobile ? "" : "fade-down"}`}/>
+                                <input
+                                    type="text"
+                                    placeholder='Name'
+                                    name='name'
+                                    required
+                                    data-aos={`${isMobile ? "" : "fade-down"}`}
+                                    data-aos-duration={`${isMobile ? "" : "1000"}`}
+                                />
                             </div>
                             <div className={classes.form__container}>
-                                <input type="text" placeholder='Email' name='email' data-aos={`${isMobile ? "" : "fade-left"}`} required />
+                                <input 
+                                    type="text"
+                                    placeholder='Email'
+                                    name='email'
+                                    data-aos={`${isMobile ? "" : "fade-left"}`} required
+                                    data-aos-duration={`${isMobile ? "" : "1000"}`}
+                                />
                             </div>
                             <div className={classes.form__container}>
-                                <textarea placeholder='Message' name='message' data-aos={`${isMobile ? "" : "fade-right"}`} required></textarea>
+                                <textarea 
+                                    placeholder='Message'
+                                    name='message'
+                                    data-aos={`${isMobile ? "" : "fade-right"}`}
+                                    data-aos-duration={`${isMobile ? "" : "1000"}`}
+                                    required>
+                                    </textarea>
                             </div>
                             <div className={classes.form__container__button} data-aos={`${isMobile ? "" : "fade-up"}`}>
                             <button type='submit' value="send" className={classes.form__container__button__center}>Send</button>
