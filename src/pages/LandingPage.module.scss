@@ -1,177 +1,177 @@
 @import ".././styles/variables.scss";
 
 .section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  padding-bottom: 10rem;
-  height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	padding-bottom: 10rem;
+	height: auto;
 
-  &__container {
-    max-width: 579px;
-    &__item {
-      display: block;
-      text-align: center;
-      width: 100%;
-      margin-bottom: $section-margin;
-      &__img {
-        width: 18rem;
-        object-position: 0 -3px;
-      }
-      &__text {
-        display: block;
-        background: $dark-grey;
-        border-radius: 15px;
-        padding: 15px 35px;
-        margin-top: -56px;
-      }
-    }
-    &__split {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      @media screen and (max-width: $small-screen) {
-        flex-direction: column;
-      }
-      &__name {
-        h1 {
-          font-size: $name-size;
-          font-family: $logo;
-          font-weight: 500;
-          letter-spacing: -3.2px;
-          color: $red;
-        }
-        @media screen and (max-width: $small-screen) {
-          text-align: center;
-        }
-      }
-      &__img {
-        margin-left: auto;
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        @media screen and (max-width: $small-screen) {
-          margin: 15px auto;
-        }
-      }
-    }
-    &__info {
-      margin: 2.8rem 0;
-      color: #eeeeee;
-      h2 {
-        font-weight: 500;
-        font-size: $heading-size;
-        border-bottom: 4px solid $dark-grey;
-        margin-bottom: 6px;
-      }
-      &__about {
-        margin-bottom: $section-margin;
-        h2 {
-          width: 60px;
-        }
-      }
-      &__interest {
-        margin-bottom: $section-margin;
-        h2 {
-          width: 74px;
-        }
-      }
-      &__socials {
-        margin-bottom: $section-margin;
-        &__items {
-          display: flex;
-          margin: 1rem 0;
-          &__symbol {
-            font-size: 21px;
-          }
-          p {
-            margin-left: 1rem;
-            font-style: italic;
-          }
-        }
-        h2 {
-          width: 68px;
-        }
-      }
-      &__button {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: $section-margin;
-        button {
-          width: 120px;
-          height: 40px;
-          border-radius: 10px;
-          border: none;
-          background: rgba(112, 230, 217, 1);
-          cursor: pointer;
-          transition: all 0.3s;
-          font-size: 0.9rem;
+	&__container {
+		max-width: 579px;
+		&__item {
+			display: block;
+			text-align: center;
+			width: 100%;
+			margin-bottom: $section-margin;
+			&__img {
+				width: 18rem;
+				object-position: 0 -3px;
+			}
+			&__text {
+				display: block;
+				background: $dark-grey;
+				border-radius: 15px;
+				padding: 15px 35px;
+				margin-top: -56px;
+			}
+		}
+		&__split {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			@media screen and (max-width: $small-screen) {
+				flex-direction: column;
+			}
+			&__name {
+				h1 {
+					font-size: $name-size;
+					font-family: $logo;
+					font-weight: 500;
+					letter-spacing: -3.2px;
+					color: $red;
+				}
+				@media screen and (max-width: $small-screen) {
+					text-align: center;
+				}
+			}
+			&__img {
+				margin-left: auto;
+				width: 125px;
+				height: 125px;
+				border-radius: 50%;
+				@media screen and (max-width: $small-screen) {
+					margin: 15px auto;
+				}
+			}
+		}
+		&__info {
+			margin: 2.8rem 0;
+			color: #eeeeee;
+			h2 {
+				font-weight: 500;
+				font-size: $heading-size;
+				border-bottom: 4px solid $dark-grey;
+				margin-bottom: 6px;
+			}
+			&__about {
+				margin-bottom: $section-margin;
+				h2 {
+					width: 60px;
+				}
+			}
+			&__interest {
+				margin-bottom: $section-margin;
+				h2 {
+					width: 74px;
+				}
+			}
+			&__socials {
+				margin-bottom: $section-margin;
+				&__items {
+					display: flex;
+					margin: 1rem 0;
+					&__symbol {
+						font-size: 21px;
+					}
+					p {
+						margin-left: 1rem;
+						font-style: italic;
+					}
+				}
+				h2 {
+					width: 68px;
+				}
+			}
+			&__button {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				margin-bottom: $section-margin;
+				button {
+					width: 120px;
+					height: 40px;
+					border-radius: 10px;
+					border: none;
+					background: rgba(112, 230, 217, 1);
+					cursor: pointer;
+					transition: all 0.3s;
+					font-size: 0.9rem;
 
-          &:hover {
-            background: rgb(74, 233, 214);
-            margin-left: 0.9rem;
-          }
-        }
-        &__arrow {
-          position: relative;
-          top: 2px;
-        }
-      }
-      &__projects {
-        margin-bottom: $section-margin;
-        h2 {
-          width: 142px;
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+					&:hover {
+						background: rgb(74, 233, 214);
+						margin-left: 0.8rem;
+					}
+				}
+				&__arrow {
+					position: relative;
+					top: 2px;
+				}
+			}
+			&__projects {
+				margin-bottom: $section-margin;
+				h2 {
+					width: 142px;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
 }
 
 // Design for the latest cards section
 .container {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  color: $font-color;
-  &__card {
-    width: 100%;
-    &__image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &__item {
-        width: 270px;
-        height: 180px;
-        border-radius: 10px;
-        @media screen and (max-width: $small-screen) {
-          width: 100%;
-          height: 300px;
-        }
-        @media screen and (max-width: 469px) {
-          width: 100%;
-          height: 235px;
-        }
-      }
-    }
-    &__text {
-      text-align: center;
-      h1 {
-        padding: 10px 0;
-        font-size: 1.2rem;
-      }
-    }
-  }
-  @media screen and (max-width: $small-screen) {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-  }
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	color: $font-color;
+	&__card {
+		width: 100%;
+		&__image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&__item {
+				width: 270px;
+				height: 180px;
+				border-radius: 10px;
+				@media screen and (max-width: $small-screen) {
+					width: 100%;
+					height: 300px;
+				}
+				@media screen and (max-width: 469px) {
+					width: 100%;
+					height: 235px;
+				}
+			}
+		}
+		&__text {
+			text-align: center;
+			h1 {
+				padding: 10px 0;
+				font-size: 1.2rem;
+			}
+		}
+	}
+	@media screen and (max-width: $small-screen) {
+		grid-template-columns: 1fr;
+		padding: 0 1rem;
+	}
 }
