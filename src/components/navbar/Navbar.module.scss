@@ -1,159 +1,162 @@
 @import "../../styles/variables.scss";
 
 .header {
-  background: #202023ce;
-  width: 100%;
-  height: $headerHeight;
-  padding: 0 1.5rem;
-  position: fixed;
-  top: 0;
-  z-index: 999;
+	background: #202023ce;
+	width: 100%;
+	height: $headerHeight;
+	padding: 0 1.5rem;
+	position: fixed;
+	top: 0;
+	z-index: 999;
 
-  @include breakpoint(md) {
-    padding: 0 3rem;
-    backdrop-filter: blur(4px);
-  }
-  transition: 0.3s ease all;
+	@include breakpoint(md) {
+		padding: 0 3rem;
+		backdrop-filter: blur(4px);
+	}
+	transition: 0.3s ease all;
 
-  &__content {
-    overflow: hidden;
-    color: $font-color;
-    margin: 0 auto;
-    max-width: 768px; //Might change hehe
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    height: 100%;
-    position: relative;
+	&__content {
+		overflow: hidden;
+		color: $font-color;
+		margin: 0 auto;
+		max-width: 768px; //Might change hehe
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 100;
+		height: 100%;
+		position: relative;
 
-    &__logo {
-      font-size: $nav-brand-size;
-      font-weight: 600;
-      font-family: $logo;
-      letter-spacing: -1px;
-      text-decoration: none;
-      color: $font-color;
-      list-style: none;
-    }
+		&__logo {
+			font-size: $nav-brand-size;
+			font-weight: 600;
+			font-family: $logo;
+			letter-spacing: -1px;
+			text-decoration: none;
+			color: $font-color;
+			list-style: none;
+		}
 
-    &__wiggle {
-      transition: transform 0.7s ease-in-out;
-      color: $yellow;
-      &:hover {
-        transform: rotate(360deg);
-      }
-    }
+		&__wiggle {
+			transition: transform 0.7s ease-in-out;
+			color: $yellow;
+			&:hover {
+				transform: rotate(360deg);
+			}
+		}
 
-    &__darkmode {
-      font-size: $nav-brand-size;
-      cursor: pointer;
-    }
+		&__darkmode {
+			font-size: $nav-brand-size;
+			cursor: pointer;
+		}
 
-    &__sun {
-      position: relative;
-      top: 3px;
-      color: $font-color;
+		&__sun {
+			position: relative;
+			top: 3px;
+			color: $font-color;
 
-      &:hover {
-        filter: brightness(130%);
-      }
-    }
+			&:hover {
+				filter: brightness(130%);
+			}
+		}
 
-    &__moon {
-      position: relative;
-      top: 3px;
-      color: rgb(65, 0, 170);
+		&__moon {
+			position: relative;
+			top: 3px;
+			color: rgb(65, 0, 170);
 
-      &:hover {
-        filter: brightness(130%);
-      }
-    }
+			&:hover {
+				filter: brightness(130%);
+			}
+		}
 
-    &__nav {
-      top: 0;
-      right: 100%;
-      bottom: 0;
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      backdrop-filter: blur(4px);
-      transform: translate(0);
-      transition: 0.3s ease all;
-      background: $bg-color;
-      opacity: 85%;
+		&__nav {
+			top: 0;
+			right: 100%;
+			bottom: 0;
+			width: 100%;
+			height: 100vh;
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			backdrop-filter: blur(4px);
+			transform: translate(0);
+			transition: 0.6s all cubic-bezier(0.05, 0.025, 0.32, 1.275);
+			background: $bg-color;
+			opacity: 85%;
 
-      @include breakpoint(md) {
-        transform: none;
-        flex-direction: row;
-        width: auto;
-        height: 100%;
-        position: static;
-        backdrop-filter: blur(0px);
-        background: none;
-      }
-      ul {
-        font-weight: 400;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: $spacing-lg;
-        @include breakpoint(md) {
-          font-weight: 400;
-          flex-direction: row;
-          align-items: center;
-          margin-bottom: 0;
-          margin-right: calc(0.5rem + #{$spacing-md});
-        }
-        li {
-          &:not(:last-child) {
-            margin-bottom: $spacing-lg;
-            @include breakpoint(md) {
-              margin-bottom: 0;
-              margin-right: $spacing-md;
-            }
-          }
-          a {
-            text-decoration: none;
-            color: inherit;
-            padding: 0.75rem 1.25rem;
-            transition: 0.3s ease all;
+			@include breakpoint(md) {
+				transform: none;
+				flex-direction: row;
+				width: auto;
+				height: 100%;
+				position: static;
+				backdrop-filter: blur(0px);
+				background: none;
+			}
+			ul {
+				font-weight: 400;
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				margin-bottom: $spacing-lg;
+				@include breakpoint(md) {
+					font-weight: 400;
+					flex-direction: row;
+					align-items: center;
+					margin-bottom: 0;
+					margin-right: calc(0.5rem + #{$spacing-md});
+				}
+				li {
+					&:not(:last-child) {
+						margin-bottom: $spacing-lg;
+						@include breakpoint(md) {
+							margin-bottom: 0;
+							margin-right: $spacing-md;
+						}
+					}
+					a {
+						text-decoration: none;
+						color: inherit;
+						padding: 0.75rem 1.25rem;
+						transition: 0.3s ease all;
 
-            &:hover {
-              text-decoration: underline;
-              text-underline-position: under;
-            }
-            &:active {
-              border-radius: calc(#{$borderRadius} + 6px);
-              background: (rgba($font-color, 0.1), rgba($font-color, 0.2));
-            }
-          }
-        }
-      }
-      &.isMenu {
-        transform: translate(100%);
-      }
-    }
-    &__toggle {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      font-size: 1.4rem;
-      transition: 0.3s ease all;
-      position: relative;
+						&:hover {
+							text-decoration: underline;
+							text-underline-position: under;
+						}
+						&:active {
+							border-radius: calc(#{$borderRadius} + 6px);
+							background: (
+								rgba($font-color, 0.1),
+								rgba($font-color, 0.2)
+							);
+						}
+					}
+				}
+			}
+			&.isMenu {
+				transform: translate(100%);
+			}
+		}
+		&__toggle {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			font-size: 1.4rem;
+			transition: 0.3s ease all;
+			position: relative;
 
-      &:hover {
-        color: $yellow;
-      }
+			&:hover {
+				color: $yellow;
+			}
 
-      @include breakpoint(md) {
-        display: none;
-      }
-    }
-  }
+			@include breakpoint(md) {
+				display: none;
+			}
+		}
+	}
 }
