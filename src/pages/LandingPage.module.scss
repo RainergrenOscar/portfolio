@@ -51,6 +51,7 @@
 				width: 125px;
 				height: 125px;
 				border-radius: 50%;
+
 				@media screen and (max-width: $small-screen) {
 					margin: 15px auto;
 				}
@@ -143,11 +144,17 @@
 	grid-gap: 2rem;
 	color: $font-color;
 	&__card {
+		cursor: pointer;
 		width: 100%;
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(1.05);
+		}
 		&__image {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
 			&__item {
 				width: 270px;
 				height: 180px;

@@ -23,7 +23,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		z-index: 100;
+		z-index: 998;
 		height: 100%;
 		position: relative;
 
@@ -104,7 +104,6 @@
 				flex-direction: column;
 				margin-bottom: $spacing-lg;
 				@include breakpoint(md) {
-					font-weight: 400;
 					flex-direction: row;
 					align-items: center;
 					margin-bottom: 0;

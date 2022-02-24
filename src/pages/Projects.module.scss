@@ -1,34 +1,35 @@
 @import ".././styles/variables.scss";
 
 .section {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  padding-bottom: 10rem;
-  &__container {
-    max-width: 579px;
-    &__item {
-      display: block;
-      text-align: center;
-      width: 100%;
-      margin-bottom: $section-margin;
-      &__img {
-        width: 18rem;
-        object-position: 0 -3px;
-      }
-      &__text {
-        display: block;
-        background: $dark-grey;
-        border-radius: 15px;
-        padding: 15px 35px;
-        margin-top: -56px;
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	padding-bottom: 10rem;
+	&__container {
+		max-width: 579px;
+		&__item {
+			display: block;
+			text-align: center;
+			width: 100%;
+			margin-bottom: $section-margin;
+
+			&__img {
+				width: 18rem;
+				object-position: 0 -3px;
+			}
+			&__text {
+				display: block;
+				background: $dark-grey;
+				border-radius: 15px;
+				padding: 15px 35px;
+				margin-top: -56px;
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
 }
